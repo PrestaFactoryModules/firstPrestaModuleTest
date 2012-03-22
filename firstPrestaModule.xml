@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE phpunit SYSTEM "phpunit.dtd" >
+<phpunit bootstrap='/home/kzone/Driven-test/prestashop/modules/firstPrestaModuleTest/Bootstrap.php'
+		 colors="true">
+<filter>
+	<whitelist>
+		<directory suffix="Test.php">.</directory>
+	</whitelist>
+</filter>
+
+<logging>
+	<log type="coverage-html"
+		 target="./report"
+		 charset="UTF-8"
+		 yui="true"
+		 highlight="true"
+		 lowUpperBound="35"
+		 highLowerBound="70"/>
+	<log type="testdox-html" 
+		 target="./testdox.html"/>
+</logging>
+
+</phpunit>

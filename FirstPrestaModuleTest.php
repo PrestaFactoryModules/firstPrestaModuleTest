@@ -73,7 +73,7 @@ Use of undefined constant _PS_MAGIC_QUOTES_GPC_ - assumed '_PS_MAGIC_QUOTES_GPC_
 	 * @todo implement the code into firstPrestaModule.php
 	 */
 
-	public function testShouldHaveADescrption(){
+	public function testShouldHaveADescription(){
 		$expected = 'mon premier presta module';
 		$this->assertEquals($expected, $this->module->description);
 	}

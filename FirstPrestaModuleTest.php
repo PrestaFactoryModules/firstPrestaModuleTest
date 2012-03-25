@@ -28,6 +28,7 @@ class FirstPrestaModuleTest extends PHPUnit_Framework_TestCase {
 	 * initialize your environment & framework for tests
 	 */
 	public function setUp(){
+		include_once 'Bootstrap.php';
 		require_once 'config.inc.php'; // nécessaire pour les variable globales 
 									   // instanciées par prestashop !!
 									   // Sans, $this->name='firstPrestaModule'; produira
@@ -42,6 +43,8 @@ Use of undefined constant _PS_MAGIC_QUOTES_GPC_ - assumed '_PS_MAGIC_QUOTES_GPC_
 										*
 										* si l'on commente l'inti de cette variable c'est OK !
 									    */
+		
+		ControllerFactory::getController('IndexController')->run();
 		$this->module = new firstPrestaModule();
 	}
 	

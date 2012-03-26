@@ -1,0 +1,13 @@
+classes
+config
+firstPrestaModule
+logs
+.settings
+*.bak
+phpunit.dtd
+test.php
+.buildpath
+.project
+report
+.externalToolBuilders
+

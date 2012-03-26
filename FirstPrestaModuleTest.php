@@ -19,9 +19,9 @@ set_include_path (get_include_path().PATH_SEPARATOR . TEST_DIR);
 require_once 'autoload.php';
 spl_autoload_register('__autoload');
 // Call MyClassTest::main() if this source file is executed directly.
-/* if (!defined('PHPUnit_MAIN_METHOD')) {
+if (!defined('PHPUnit_MAIN_METHOD')) {
 	define('PHPUnit_MAIN_METHOD', 'FirstPrestaModuleTest::main');
-} */
+}
 
 /*===========================================================================*/
 
@@ -105,6 +105,6 @@ Use of undefined constant _PS_MAGIC_QUOTES_GPC_ - assumed '_PS_MAGIC_QUOTES_GPC_
 /*=========================================================================*/
 
 // Call MyClassTest::main() if this source file is executed directly.
-/* if (PHPUnit_MAIN_METHOD == 'FirstPrestaModuleTest::main') {
+if (PHPUnit_MAIN_METHOD == 'FirstPrestaModuleTest::main') {
 	FirstPrestaModuleTest::main();
-} */
+}

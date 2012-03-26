@@ -3,11 +3,11 @@
 <phpunit bootstrap='/home/kzone/Driven-test/prestashop/modules/firstPrestaModuleTest/Bootstrap.php'
 		 colors="true">
 
-  <testsuite name="My Test Suite">
-    <directory>/home/kzone/Driven-test/prestashop/modules/firstPrestaModuleTest/*Test.php</directory>
-    <file>/home/kzone/Driven-test/prestashop/modules/firstPrestaModuleTest/*Test.php</file>
+<!--   <testsuite name="My Test Suite">
+    <directory>./*Test.php</directory>
+    <file>./*Test.php</file>
   </testsuite>
-  
+  --> 
 <filter>
 	<whitelist>
 		<directory suffix="Test.php">.</directory>
